@@ -970,6 +970,7 @@ header nav .form i {
   padding: 20px;
   display: block;
   border: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
   margin-bottom: 30px;
   width: 100%;
 }
@@ -984,6 +985,14 @@ header nav .form i {
   margin-left: auto;
   display: flex;
   cursor: pointer;
+}
+.contact .content form span.progress {
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--main-color);
+  position: relative;
+  top: -31px;
 }
 @media (max-width: 768px) {
   .contact .content form input[type="submit"] {

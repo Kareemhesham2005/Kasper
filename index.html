@@ -462,8 +462,10 @@
             </div>
             <div class="content">
                 <form>
-                    <input type="text" name="name" class="main-input" placeholder="Your Name">
-                    <input type="email" name="mail" class="main-input" placeholder="Your Email">
+                    <input type="text" name="name" class="main-input" placeholder="Your Name" maxlength="40">
+                    <span class="progress"></span>
+                    <input type="email" name="mail" class="main-input" placeholder="Your Email" maxlength="40">
+                    <span class="progress"></span>
                     <textarea name="message" class="main-input" placeholder="Your Message"></textarea>
                     <input type="submit" value="SEND MESSAGE">
                 </form>
@@ -496,6 +498,7 @@
         </div>
     </div>
     <!-- End Footer -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
