@@ -149,27 +149,40 @@ header nav {
 header nav .toggle {
   color: white;
   font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+header nav .toggle:hover {
+  color: var(--main-color);
 }
 @media (min-width: 768px) {
   header nav .toggle {
     display: none;
   }
 }
-header nav ul {
-  display: flex;
-}
 @media (max-width: 767px) {
   header nav ul {
-    display: none;
-  }
-  header nav .toggle:hover + ul {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+    height: 0;
     background-color: rgb(0 0 0 / 50%);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    overflow: hidden;
+  }
+  .show {
+    height: 280px;
   }
   header nav ul li a {
     padding: 15px;

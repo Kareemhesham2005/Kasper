@@ -15,3 +15,14 @@ inputs.forEach((input) => {
     }
   };
 });
+
+let toggle = document.querySelector("header .toggle");
+let menu = document.querySelector("header ul");
+
+toggle.onclick = function () {
+  if (menu.classList.contains("show")) {
+    menu.classList.remove("show");
+  } else {
+    menu.classList.add("show");
+  }
+};
