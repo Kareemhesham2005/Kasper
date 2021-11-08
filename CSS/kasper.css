@@ -146,6 +146,11 @@ header nav {
   justify-content: flex-end;
   align-items: center;
 }
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header nav .toggle {
   color: white;
   font-size: 22px;
